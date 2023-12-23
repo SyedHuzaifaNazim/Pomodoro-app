@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background-image: url('./960x0.webp'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center; /* Positions the background image at the center */
+  /* Add other styles or properties as needed */
+}
+
+
+.container {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  color: #000;
+}
+
+
+.section1,
+.section2 {
+  margin-top: 20px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 200, 0.1);
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 0.5); 
+
+}
+
+
+.block {
+  text-align: center;
+  padding: 20px;
+}
+
+.block h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+
+.Timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #333;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-warning {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #f57c00;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #555;
+}
+
+.btn-secondary {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #888;
+}
+
+.btn-danger {
+  background-color: #000000;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #000000;
+}
+
+
+input[type="number"] {
+  padding: 8px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+label {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  input[type="number"] {
+    width: 80px;
+  }
+}

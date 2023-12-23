@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer by Huzaifa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <main id="main">
+        <div class="container">
+            <h1 style="text-align: center;">Pomodoro Timer </h1>
+            <section class="section1" id="section1">
+         
+              <div class="block" >
+                        <div class="Timer">
+                            <h3 id="min">00</h3> <h3 id="colon">:</h3> <h3 id="sec">00</h3>
+                        </div>
+                  
+                       <button class="btn btn-light" class="disable" id="continue-btn"  onClick="start(); disableButton()">
+                           continue
+                       </button>
+                       <button class="btn btn-warning" id="pause-btn" onclick="document.getElementById('continue-btn').disabled = false;clearInterval(interval) ; enableButton() ;">
+                        Pause
+                    </button>
+              </div>
+           
+            </section>
+            <section class="section2">
+                <div class="time-manage">
+                    <div class="row">
+                        <div class="col">
+                          <h4 >work Duration</h4>
+                          <button class="btn btn-dark">Set timer</button>
+            
+
+                          <input type="number" id="work-input" value="25" class="btn btn-dark" name="appt"
+                          required>
+                          <button class="btn btn-secondary" id="work-disable-btn" onClick="start();  enableButton(); disableButton();" >Start</button>
+                          <button class="btn btn-danger" onClick="document.getElementById('continue-btn').disabled = true; enableButton(); document.getElementById('pause-btn').disabled = true; reset(); ">Reset</button>
+                        </div>
+                        <div class="col">
+                            <h4 >Break</h4>
+                            <input type="number" id="break-input" value="5" class="btn btn-dark" name="appt"
+                                    required>
+                            <button class="btn btn-secondary" id="break-disable-btn" onClick="breakStart(); disableButton() ; enableButton()">Start</button>
+                            <button class="btn btn-danger" onClick="reset()">Reset</button>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
